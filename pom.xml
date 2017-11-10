@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='ASCII'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.thomsonreuters.ecp-ticker-feed</groupId>
+    <artifactId>ecp-ticker-feed</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>etf-parent</module>
+    <module>etf-common</module>
+    <module>etf-hive-updater-workflow</module>
+    <module>etf-etl-workflow</module>
+  </modules>
+  <version>2.0-SNAPSHOT</version>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>bams-amers-release</id>
+            <name>bams-amers-release</name>
+            <url>http://bams-amers-sami-api.int.thomsonreuters.com/artifactory/release.maven.global</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>bams-amers-plugin</id>
+            <name>bams-amers-plugin</name>
+            <url>http://bams-amers-sami-api.int.thomsonreuters.com/artifactory/plugins-release.maven.local</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
